@@ -2,13 +2,16 @@
   "name": "todo-react-hooks",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://Artorin.github.io/test_react_eq_yew",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "jest --verbose false"
+    "test": "jest --verbose false",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
